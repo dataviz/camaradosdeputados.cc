@@ -1,0 +1,42 @@
+$green: #00A859;
+$yellow: #FFCC29;
+$blue: #3E4095;
+$cloud: #ECF0F1;
+$link: #3498DB;
+$silver: #BDC3C7;
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: $green;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  a {
+    color: $yellow;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.content {
+  width: 360px;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  margin-top: -100px;
+  margin-left: -200px;
+  text-align: center;
+  background: lighten($green,5%);
+  p {
+    color: darken($green, 5%);
+    text-transform: uppercase;
+  }
+}
